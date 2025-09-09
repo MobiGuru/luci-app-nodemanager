@@ -1,28 +1,28 @@
 <%+header%>
-<h2><%:Node Manager - Settings%></h2>
+<h2><%:translate("Node Manager") - translate("Settings")%></h2>
 
 <form id="settingsForm" method="post" action="<%=luci.dispatcher.build_url('admin/services/nodemanager/settings')%>">
   <input type="hidden" name="token" value="<%=token%>"/>
 
   <div class="cbi-section">
     <div class="cbi-value">
-      <label class="cbi-value-title"><%:Config file path%></label>
+      <label class="cbi-value-title"><%:translate("Config file path")%></label>
       <div class="cbi-value-field">
         <input class="cbi-input-text" name="path" value="<%=path or ''%>" placeholder="/etc/nikki/profiles/config.yaml" required/>
       </div>
     </div>
 
     <div class="cbi-value">
-      <label class="cbi-value-title"><%:Template file path (optional)%></label>
+      <label class="cbi-value-title"><%:translate("Template file path") (translate("optional"))%></label>
       <div class="cbi-value-field">
         <input class="cbi-input-text" name="template" value="<%=tpl or ''%>" placeholder="/usr/share/nodemanager/config.template.yaml"/>
       </div>
     </div>
 
     <div class="cbi-value">
-      <label class="cbi-value-title"><%:Create if missing%></label>
+      <label class="cbi-value-title"><%:translate("Create if missing")%></label>
       <div class="cbi-value-field">
-        <label><input type="checkbox" name="create" value="1"/> <%:Create target config now if it does not exist%></label>
+        <label><input type="checkbox" name="create" value="1"/> <%:translate("Create target config now if it does not exist")%></label>
       </div>
     </div>
   </div>

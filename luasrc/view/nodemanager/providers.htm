@@ -1,5 +1,5 @@
 <%+header%>
-<h2><%:Node Manager - Providers%></h2>
+<h2><%:translate("Node Manager") - translate("Providers")%></h2>
 
 <form id="provForm" method="post" action="<%=luci.dispatcher.build_url('admin/services/nodemanager/providers')%>">
   <input type="hidden" name="token" value="<%=token%>"/>
@@ -7,8 +7,8 @@
   <table class="table">
     <thead>
       <tr>
-        <th><%:Name%></th>
-        <th>URL (http/https)</th>
+        <th><%:translate("Provider Name")%></th>
+        <th>translate("Subscribe URL")</th>
         <th></th>
       </tr>
     </thead>

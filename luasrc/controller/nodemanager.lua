@@ -1,8 +1,11 @@
 module("luci.controller.nodemanager", package.seeall)
 
 function index()
+	local i18n = require "luci.i18n"
 	local fs = require "nixio.fs"
 	if not fs.access("/usr/lib/lua/luci/nodemanager/util.lua") then return end
+	i18n.setlanguage(disp.lang())
+	i18n.load("nodemanager")
 	entry({"admin","services","nodemanager"}, firstchild(), _("Node Manager"), 70).dependent = false
 	entry({"admin","services","nodemanager","proxies"},   call("action_proxies"),   _("Proxies"),   10).leaf = true
 	entry({"admin","services","nodemanager","providers"}, call("action_providers"), _("Providers"), 20).leaf = true

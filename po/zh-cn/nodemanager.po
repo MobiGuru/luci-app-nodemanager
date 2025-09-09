@@ -79,8 +79,20 @@ msgstr "设置"
 msgid "Config file path"
 msgstr "配置文件路径"
 
+msgid "Template file path"
+msgstr "模版文件路径"
+
+msgid "optional"
+msgstr "可选"
+
+msgid "Create if missing"
+msgstr "若不存在则创建"
+
 msgid "Create the file if missing"
 msgstr "若不存在则创建"
+
+msgid "Create target config now if it does not exist"
+msgstr "如果目标配置文件不存在则立即根据模版新建"
 
 msgid "Current file:"
 msgstr "当前文件："

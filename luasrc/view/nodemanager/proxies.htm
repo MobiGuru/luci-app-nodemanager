@@ -1,5 +1,5 @@
 <%+header%>
-<h2><%:Node Manager - Proxies%></h2>
+<h2><%:translate("Node Manager") - translate("Proxies")%></h2>
 <% if errmsg then %><div class="alert-message warning"><%=errmsg%></div><% end %>
 
 <style>
@@ -16,12 +16,12 @@
     <thead>
       <tr>
         <th style="width:2.2em">⇅</th>
-        <th><%:Name%></th>
-        <th><%:Server (IP or Domain)%></th>
+        <th><%:translate("Name")%></th>
+        <th><%:translate("Server (IP or Domain)")%></th>
         <th style="width:6em"><%:Port%></th>
-        <th><%:Username%></th>
-        <th><%:Password%></th>
-        <th><%:Bind IPs (/32)%></th>
+        <th><%:translate("Username")%></th>
+        <th><%:translate("Password")%></th>
+        <th><%:translate("Bind IPs (/32)")%></th>
         <th style="width:3em"></th>
       </tr>
     </thead>
